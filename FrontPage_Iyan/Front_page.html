@@ -6,9 +6,13 @@
   <link rel="stylesheet" type="text/css" href="Front_page.css">
   <title>Energias valle del norte</title>
 </head>
+<script src="./src/scripts/Animations.js"></script>
+<script src="./src/scripts/RightMenu.js"></script>
+<script src="./src/scripts/StartVideo.js"></script>
+<script src="./src/scripts/PContent.js"></script>
   <!--Este nav contiene enlaces a las demas paginas-->
   <nav>
-    <img src="./src/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
+    <img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
     
     <ul class="list">
       <li class="menuPrincipalAni"><a href="#">Instalaciones</a></li>
@@ -18,7 +22,7 @@
     </ul>
   </nav>
 
-  <img src="./src/menu.png" alt="Menu" width="40" height="40" class="menu" onmouseenter="openRightMenu()" onmouseleave="closeRightMenu()"> <!--Boton para desplegar el menu (NO FUNCIONAL)-->
+  <img src="./src/images_videos/menu.png" alt="Menu" width="40" height="40" class="menu" onclick="openOrCloseMenu()"> <!--Boton para desplegar el menu (NO FUNCIONAL)-->
 
   <div class="welcomeBox">
     <h1 id="welcomeh1">Valle del Norte</h1>
@@ -27,150 +31,46 @@
 
   <div id="sideBar" onmouseenter="openRightMenu()" onmouseleave="closeRightMenu()">
     <ul id="menuSideBar">
-      <li class="sideBarLi"><a href="#">Instalaciones</a></li>
-      <li class="sideBarLi"><a href="#">Energias renovables</a></li>
-      <li class="sideBarLi"><a href="#">Asesoramiento Juridico</a></li>
-      <li class="sideBarLi"><a href="#">Contacto</a></li>
+      <li class="sideBarLi"><a href="https://youtube.com">Instalaciones</a></li>
+      <li class="sideBarLi"><a href="https://youtube.com">Energias renovables</a></li>
+      <li class="sideBarLi"><a href="https://youtube.com">Asesoramiento Juridico</a></li>
+      <li class="sideBarLi"><a href="https://youtube.com">Contacto</a></li>
     </ul>
   </div>
 
   <!--Video fuente de la pagina principal-->
     <video controls loop id="background-video" onmousemove="startVideo()">
-      <source src="./src/HomeVideo.mp4" type="video/mp4">
+      <source src="./src/images_videos/HomeVideo.mp4" type="video/mp4">
     </video>
 
     <!--Seccion de botones parte inferior-->
-    <iframe class="fondoHand" onmousemove="animateDivHand()" onmouseleave="leaveDivHand()"></iframe>
-      <a href="#"><img src="./src/IconHand.png" alt="Mano" width="100" height="100" class="menuIconos" id="iconHand" onmouseenter="animateDivHand()" onmouseleave="leaveDivHand()"/>
+    <iframe class="fondoHand" onmouseenter="animateDiv(1)" onmouseleave="leaveDiv()"></iframe>
+      <a href="https://youtube.com"><img src="./src/images_videos/IconHand.png" alt="Mano" width="100" height="100" class="menuIconos" id="iconHand" onmouseenter="animateDiv(1)" onmouseleave="leaveDiv()"/>
 
-    <div class="contentHand">
-        <p class="contentInsideBox"></p>
+    <iframe class="fondoInstalacion" onmouseenter="animateDiv(2)" onmouseleave="leaveDiv()"></iframe>
+      <a href="https://youtube.com"><img src="./src/images_videos/IconInstalation.png" alt="Instalacion" width="100" height="100" class="menuIconos" id="iconInstalation" onmouseenter="animateDiv(2)" onmouseleave="leaveDiv()"/>
+
+    <div class="contentFromBox">
+      <p id="contentInsideBox"></p>
     </div>
 
-    <iframe class="fondoEarth" onmousemove="animateDivEarth()" onmouseleave="leaveDivEarth()"></iframe>
-      <a href="#"><img src="./src/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth" onmouseenter="animateDivEarth()" onmouseleave="leaveDivEarth()"/>
-
-    <div class="contentEarth">
-        <p class="contentInsideBox"></p>
-    </div>
-
-    <iframe class="fondoInstalacion" onmousemove="animateDivInstalation()" onmouseleave="leaveDivInstalation()"></iframe>
-      <a href="#"><img src="./src/IconInstalation.png" alt="Instalacion" width="100" height="100" class="menuIconos" id="iconInstalation" onmouseenter="animateDivInstalation()" onmouseleave="leaveDivInstalation()"/>
-
-    <div class="contentInstalation">
-      <p class="contentInsideBox"></p>
-    </div>
+    <iframe class="fondoEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"></iframe>
+      <a href="https://youtube.com"><img src="./src/images_videos/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"/></a>
 
     <!--Go up function-->
-    <img src="./src/arriba.png" id="goUp" onclick="scrollUp()">
+    <img src="./src/images_videos/arriba.png" id="goUp" onclick="scrollUp()"/>
 
-    <div id="centerFooter">
+    <article id="centerFooter">
       <footer>
-        <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
+        <p>&copy; Energias Valle del Norte. S.L.U 2024-2025</p>
         <p>Para mayor informacion contactenos en nuestras redes sociales</p>
           <ul class="lista_redes_sociales">
-              <li class="red_social"><img src="./src/facebook.png" alt="facebook" class="red_social"></li>
-              <li class="red_social"><img src="./src/instagram.png" alt="instagram" class="red_social"></li>
-              <li class="red_social"><img src="./src/twitter.png" alt="twitter" class="red_social"></li>
-              <li class="red_social"><img src="./src/tik-tok.png" alt="tik-tok" class="red_social"></li>
+              <li class="red_social"><img src="./src/images_videos/facebook.png" alt="facebook" class="red_social"></li>
+              <li class="red_social"><img src="./src/images_videos/instagram.png" alt="instagram" class="red_social"></li>
+              <li class="red_social"><img src="./src/images_videos/twitter.png" alt="twitter" class="red_social"></li>
+              <li class="red_social"><img src="./src/images_videos/tik-tok.png" alt="tik-tok" class="red_social"></li>
           </ul>
       </footer>
-    </div>
-
-  <script>
-    //Estas funciones desplegaran los submenus de cada icono
-    function animateDivHand() {
-      var div = document.getElementsByClassName('contentHand')[0];
-      div.style.transition = '0.5s ease';
-
-      if (div.style.height === '1px') {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      } else {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      }
-    }
-
-    function animateDivEarth() {
-      var div = document.getElementsByClassName('contentEarth')[0];
-      div.style.transition = '0.5s ease';
-
-      if (div.style.height === '1px') {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      } else {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      }
-    }
-
-    function animateDivInstalation() {
-      var div = document.getElementsByClassName('contentInstalation')[0];
-      div.style.transition = '0.5s ease';
-
-      if (div.style.height === '1px') {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      } else {
-        div.style.backgroundColor = 'white';
-        div.style.height = '50px';
-      }
-    }
-
-    //Funciones para que la salida de cada menu sea rapida
-    function leaveDivHand() {
-      var div = document.getElementsByClassName('contentHand')[0];
-      div.style.height = '1px';
-      div.style.backgroundColor = 'transparent';
-    }
-
-    function leaveDivEarth() {
-      var div = document.getElementsByClassName('contentEarth')[0];
-      div.style.height = '1px';
-      div.style.backgroundColor = 'transparent';
-    }
-
-    function leaveDivInstalation() {
-      var div = document.getElementsByClassName('contentInstalation')[0];
-      div.style.height = '1px';
-      div.style.backgroundColor = 'transparent';
-    }
-
-    function startVideo() {
-      var video = document.getElementById('background-video');
-
-      video.play();
-    }
-
-    function openRightMenu() {
-      var menu = document.getElementById('sideBar');
-      var icon = document.getElementsByClassName('menu');
-
-      if (menu.style.right = '-380px') {
-        menu.style.right = '0';
-        //////////////////////////////////// MOVER ICONO A LA VEZ
-      } else {
-        menu.style.right = '-380px'
-      }
-    }
-
-    function closeRightMenu() {
-      var menu = document.getElementById('sideBar');
-
-      if (menu.style.right = '0') {
-        menu.style.right = '-380px';
-      } else {
-        menu.style.right = '0';
-      }
-    }
-
-    function scrollUp() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    }
-  </script>
+    </article>
 </body>
 </html>

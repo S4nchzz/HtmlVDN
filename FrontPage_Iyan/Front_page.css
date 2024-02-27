@@ -14,7 +14,7 @@ nav {
     position: fixed;
     right: -380px;
     transition: right 0.5s ease; /* Animación suave */
-    top: 17%;
+    top: 25%;
     height: 50%;
     padding-right: 2.5%;
     text-decoration: none;
@@ -114,8 +114,9 @@ video {
 
 .menu {
     position: fixed;
-    right: 3%;
-    top: 39%;
+    cursor: pointer;
+    right: 1%;
+    top: 15%;
 }
 
 .menu:hover {
@@ -202,34 +203,15 @@ video {
     left: 60%;
 }
 
-.contentHand {
+.contentFromBox {
     background-color: transparent;
     border: 0;
-    width: 10%;
+    width: 30%;
     height: 1px;
     position: absolute;
     top: 118%;
-    left: 31.5%;
-}
-
-.contentEarth {
-    background-color: transparent;
-    border: 0;
-    width: 10%;
-    height: 1px;
-    position: absolute;
-    top: 118%;
-    left: 58.7%;
-}
-
-.contentInstalation {
-    background-color: transparent;
-    border: 0;
-    width: 10%;
-    height: 1px;
-    position: absolute;
-    top: 118%;
-    left: 45.3%;
+    left: 35%;
+    transition: 0.5s ease;
 }
 
 footer {
@@ -237,6 +219,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 17px;
+    left: 40%;
     position: absolute;
     top: 160%;    
 }
@@ -264,10 +247,11 @@ footer {
     width: 3%;
 }
 
-.contentInsideBox {
+#contentInsideBox {
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 5%;
+    font-size: 18px;
+    transition: 0.5s ease;
+    z-index: 3;
 }
