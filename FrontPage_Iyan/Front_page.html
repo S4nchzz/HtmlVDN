@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="Front_page.css">
   <title>Energias valle del norte</title>
 </head>
-<>
   <!--Este nav contiene enlaces a las demas paginas-->
   <nav>
     <img src="./src/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
@@ -31,20 +30,33 @@
     </video>
 
     <!--Seccion de botones parte inferior-->
-    <div class="fondoHand">
-      <img src="./src/IconHand.png" alt="Mano" width="100" height="100" class="menuIconos" id="iconHand"/>
+    <iframe class="fondoHand" onmousemove="animateDivHand()" onmouseleave="leaveDivHand()"></iframe>
+      <a href="#"><img src="./src/IconHand.png" alt="Mano" width="100" height="100" class="menuIconos" id="iconHand" onmouseenter="animateDivHand()" onmouseleave="leaveDivHand()"/>
+
+    <div class="contentHand">
+        <p class="contentInsideBox"></p>
     </div>
 
-    <div class="fondoEarth">
-      <img src="./src/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth">
+    <iframe class="fondoEarth" onmousemove="animateDivEarth()" onmouseleave="leaveDivEarth()"></iframe>
+      <a href="#"><img src="./src/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth" onmouseenter="animateDivEarth()" onmouseleave="leaveDivEarth()"/>
+
+    <div class="contentEarth">
+        <p class="contentInsideBox"></p>
     </div>
 
-    <div class="fondoInstalacion">
-      <img src="./src/IconInstalation.png" alt="Instalacion" width="100" height="100" class="menuIconos" id="iconInstalation">
+    <iframe class="fondoInstalacion" onmousemove="animateDivInstalation()" onmouseleave="leaveDivInstalation()"></iframe>
+      <a href="#"><img src="./src/IconInstalation.png" alt="Instalacion" width="100" height="100" class="menuIconos" id="iconInstalation" onmouseenter="animateDivInstalation()" onmouseleave="leaveDivInstalation()"/>
+
+    <div class="contentInstalation">
+      <p class="contentInsideBox"></p>
     </div>
-      <footer>
-        <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
-        <p>Para mayor informacion contactenos en nuestras redes sociales</p>
+
+    <!--Go up function-->
+    <img src="./src/arriba.png" id="goUp" onclick="scrollUp()">
+
+    <footer>
+      <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
+      <p>Para mayor informacion contactenos en nuestras redes sociales</p>
         <ul class="lista_redes_sociales">
             <li class="red_social"><img src="./src/facebook.png" alt="facebook" class="red_social"></li>
             <li class="red_social"><img src="./src/instagram.png" alt="instagram" class="red_social"></li>
@@ -52,10 +64,77 @@
             <li class="red_social"><img src="./src/tik-tok.png" alt="tik-tok" class="red_social"></li>
         </ul>
     </footer>
+
   <script>
+    //Estas funciones desplegaran los submenus de cada icono
+    function animateDivHand() {
+      var div = document.getElementsByClassName('contentHand')[0];
+      div.style.transition = '0.5s ease';
+
+      if (div.style.height === '1px') {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      } else {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      }
+    }
+
+    function animateDivEarth() {
+      var div = document.getElementsByClassName('contentEarth')[0];
+      div.style.transition = '0.5s ease';
+
+      if (div.style.height === '1px') {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      } else {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      }
+    }
+
+    function animateDivInstalation() {
+      var div = document.getElementsByClassName('contentInstalation')[0];
+      div.style.transition = '0.5s ease';
+
+      if (div.style.height === '1px') {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      } else {
+        div.style.backgroundColor = 'white';
+        div.style.height = '50px';
+      }
+    }
+
+    //Funciones para que la salida de cada menu sea rapida
+    function leaveDivHand() {
+      var div = document.getElementsByClassName('contentHand')[0];
+      div.style.height = '1px';
+      div.style.backgroundColor = 'transparent';
+    }
+
+    function leaveDivEarth() {
+      var div = document.getElementsByClassName('contentEarth')[0];
+      div.style.height = '1px';
+      div.style.backgroundColor = 'transparent';
+    }
+
+    function leaveDivInstalation() {
+      var div = document.getElementsByClassName('contentInstalation')[0];
+      div.style.height = '1px';
+      div.style.backgroundColor = 'transparent';
+    }
+
     function startVideo() {
       var video = document.getElementById('background-video');
       video.play();
+    }
+
+    function scrollUp() {
+      window.scrollTo({
+        behavior: 'smooth',
+        top: 0,
+        });
     }
   </script>
 </body>
