@@ -9,6 +9,44 @@ nav {
     z-index: 2; /* Asegura que el nav esté en un nivel superior */
 }
 
+#sideBar {
+    width: 17%;
+    position: fixed;
+    right: -380px;
+    transition: right 0.5s ease; /* Animación suave */
+    top: 17%;
+    height: 50%;
+    padding-right: 2.5%;
+    text-decoration: none;
+    text-align: right;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    
+}
+
+.sideBarLi {
+    list-style-type: none;
+    padding: 5%;
+}
+
+.sideBarLi {
+    transition: 0.7s ease-in-out;
+    background-color: transparent;
+    color: black;
+}
+
+.sideBarLi:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
 .list {
     position: relative;
     left: 46%; /* Poiscion del contenido del nav a la derecha de la pagina */
@@ -36,7 +74,7 @@ nav {
     padding-right: 20%;
 }
 
-li::after {
+.menuPrincipalAni::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -49,7 +87,7 @@ li::after {
     transition: transform 0.25s ease-out;
 }
 
-li:hover::after {
+.menuPrincipalAni:hover::after {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
@@ -75,9 +113,9 @@ video {
 }
 
 .menu {
-    position: relative;
-    top: 13px;
-    left: 2%;    
+    position: fixed;
+    right: 3%;
+    top: 39%;
 }
 
 .menu:hover {
@@ -203,6 +241,10 @@ footer {
     top: 160%;    
 }
 
+#centerFooter {
+    margin-left: 38.5%;
+}
+
 .lista_redes_sociales {
     display: inline;
     text-align: left;
@@ -217,9 +259,9 @@ footer {
 #goUp {
     position: absolute;
     top: 150%;
-    left: 48%;
+    left: 49%;
     cursor: pointer;
-    width: 4%;
+    width: 3%;
 }
 
 .contentInsideBox {

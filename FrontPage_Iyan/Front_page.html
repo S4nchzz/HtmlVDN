@@ -11,17 +11,27 @@
     <img src="./src/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
     
     <ul class="list">
-      <li><a href="#">Instalaciones</a></li>
-      <li><a href="#">Energias Renovables</a></li>
-      <li><a href="#">Asesoramiento Juridico</a></li>
-      <li><a href="#">Contacto</a></li>
-      <img src="./src/menu.png" alt="Menu" width="40" height="40" class="menu" onclick="toggleMenu()"> <!--Boton para desplegar el menu (NO FUNCIONAL)-->
+      <li class="menuPrincipalAni"><a href="#">Instalaciones</a></li>
+      <li class="menuPrincipalAni"><a href="#">Energias Renovables</a></li>
+      <li class="menuPrincipalAni"><a href="#">Asesoramiento Juridico</a></li>
+      <li class="menuPrincipalAni"><a href="#">Contacto</a></li>
     </ul>
   </nav>
+
+  <img src="./src/menu.png" alt="Menu" width="40" height="40" class="menu" onmouseenter="openRightMenu()" onmouseleave="closeRightMenu()"> <!--Boton para desplegar el menu (NO FUNCIONAL)-->
 
   <div class="welcomeBox">
     <h1 id="welcomeh1">Valle del Norte</h1>
     <h3 id="welcomeh3">Cuidamos del medio ambiente</h3>
+  </div>
+
+  <div id="sideBar" onmouseenter="openRightMenu()" onmouseleave="closeRightMenu()">
+    <ul id="menuSideBar">
+      <li class="sideBarLi"><a href="#">Instalaciones</a></li>
+      <li class="sideBarLi"><a href="#">Energias renovables</a></li>
+      <li class="sideBarLi"><a href="#">Asesoramiento Juridico</a></li>
+      <li class="sideBarLi"><a href="#">Contacto</a></li>
+    </ul>
   </div>
 
   <!--Video fuente de la pagina principal-->
@@ -54,16 +64,18 @@
     <!--Go up function-->
     <img src="./src/arriba.png" id="goUp" onclick="scrollUp()">
 
-    <footer>
-      <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
-      <p>Para mayor informacion contactenos en nuestras redes sociales</p>
-        <ul class="lista_redes_sociales">
-            <li class="red_social"><img src="./src/facebook.png" alt="facebook" class="red_social"></li>
-            <li class="red_social"><img src="./src/instagram.png" alt="instagram" class="red_social"></li>
-            <li class="red_social"><img src="./src/twitter.png" alt="twitter" class="red_social"></li>
-            <li class="red_social"><img src="./src/tik-tok.png" alt="tik-tok" class="red_social"></li>
-        </ul>
-    </footer>
+    <div id="centerFooter">
+      <footer>
+        <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
+        <p>Para mayor informacion contactenos en nuestras redes sociales</p>
+          <ul class="lista_redes_sociales">
+              <li class="red_social"><img src="./src/facebook.png" alt="facebook" class="red_social"></li>
+              <li class="red_social"><img src="./src/instagram.png" alt="instagram" class="red_social"></li>
+              <li class="red_social"><img src="./src/twitter.png" alt="twitter" class="red_social"></li>
+              <li class="red_social"><img src="./src/tik-tok.png" alt="tik-tok" class="red_social"></li>
+          </ul>
+      </footer>
+    </div>
 
   <script>
     //Estas funciones desplegaran los submenus de cada icono
@@ -127,14 +139,37 @@
 
     function startVideo() {
       var video = document.getElementById('background-video');
+
       video.play();
+    }
+
+    function openRightMenu() {
+      var menu = document.getElementById('sideBar');
+      var icon = document.getElementsByClassName('menu');
+
+      if (menu.style.right = '-380px') {
+        menu.style.right = '0';
+        //////////////////////////////////// MOVER ICONO A LA VEZ
+      } else {
+        menu.style.right = '-380px'
+      }
+    }
+
+    function closeRightMenu() {
+      var menu = document.getElementById('sideBar');
+
+      if (menu.style.right = '0') {
+        menu.style.right = '-380px';
+      } else {
+        menu.style.right = '0';
+      }
     }
 
     function scrollUp() {
       window.scrollTo({
-        behavior: 'smooth',
         top: 0,
-        });
+        behavior: 'smooth',
+      });
     }
   </script>
 </body>
