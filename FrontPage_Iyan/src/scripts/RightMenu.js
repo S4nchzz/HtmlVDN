@@ -17,14 +17,3 @@ function closeRightMenu() {
         menu.style.right = '0';
     }
 }
-
-function openOrCloseMenu() {
-    var menu = document.getElementsByClassName('menu');
-    var sideBar = document.getElementById('sideBar');
-    
-    if (sidebar.style.right === '-380px') {
-        openRightMenu();
-    } else {
-        closeRightMenu();
-    }
-}

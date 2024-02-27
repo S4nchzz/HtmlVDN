@@ -114,7 +114,6 @@ video {
 
 .menu {
     position: fixed;
-    cursor: pointer;
     right: 1%;
     top: 15%;
 }
