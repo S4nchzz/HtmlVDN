@@ -220,7 +220,7 @@ footer {
     font-size: 17px;
     left: 40%;
     position: absolute;
-    top: 160%;    
+    top: 205%;    
 }
 
 #centerFooter {
@@ -240,7 +240,7 @@ footer {
 
 #goUp {
     position: absolute;
-    top: 150%;
+    top: 195%;
     left: 49%;
     cursor: pointer;
     width: 3%;
@@ -253,4 +253,32 @@ footer {
     font-size: 14px;
     transition: 0.5s ease;
     z-index: 3;
+}
+
+#moreInfo { 
+    background-color: #ffffff;
+    position: absolute;
+    top: 162%;
+    left: 10%;
+    right: 10%;
+    padding: 20px;
+}
+
+#infoP {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20%;
+    font-size: 24px;
+}
+
+#h1InfoP {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    padding-left: 20%;
+}
+
+#logoEmpresaBlack {
+    position: absolute;
+    width: 180px;
+    top: 15%;
+    left: 4%;
 }

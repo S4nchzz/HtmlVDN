@@ -33,3 +33,9 @@ function scrollUp() {
         behavior: 'smooth',
     });
 }
+
+function divAnimationWhoami() {
+    var div = document.getElementsByClassName('moreInfo')[0];
+
+    
+}

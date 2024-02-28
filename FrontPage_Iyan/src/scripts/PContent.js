@@ -15,7 +15,6 @@ function contentFromP (value) {
             content.innerHTML = "Error"
             break;
       }
-      return;
 }
 
 function colorStars(value) {
