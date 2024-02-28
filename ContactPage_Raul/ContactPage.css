@@ -1,0 +1,283 @@
+/* Estilos generales */
+.list {
+    position: relative;
+    left: 46%;
+    list-style: none;
+    padding: 1%;
+    top: 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list li {
+    position: relative;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo {
+    position: absolute;
+    top: 10;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding-right: 20%;
+}
+nav {
+    background: linear-gradient(to bottom, black, transparent);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1.4%;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+#asideMenu {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    top: 10;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding-right: 20%;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+a {
+    font-family:'Segoe UI', Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    position: relative;
+    top: 13px;
+    left: 2%;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./src/images_videos/foto_fondo_paisaje.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:2%;
+    padding-right:30%;
+}
+
+/* Formulario de contacto */
+#formulario {
+    background-color: #fff;
+    margin-left:2%;
+    margin-right: 50%;
+    margin-top: 10%;;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#informacion {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid  rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+}
+
+#texto_informacion{
+    font-size: 18px;
+    text-decoration: underline;
+    color:black ;
+}
+
+ul.lista_redes_sociales {
+    list-style: none;
+    display: inline; 
+    text-align: left; 
+    margin-top: 10px;
+}
+#image_footer{
+    width: 50px;
+    height: 50px;
+}
+
+li.red_social {
+    width: 24px; 
+    display: inline; 
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.elegant_button {
+    
+    float: left;
+    background: transparent;
+    border: solid rgb(0, 0, 0) 4px;
+    color: black;
+    font-size: 15px;
+}
+
+.elegant_button:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 4px solid rgb(0, 0, 0);
+    transition: 0.9s;
+    box-shadow: black px;
+}
+
+#mapa {
+    position: absolute;
+    backdrop-filter: blur(5.5px);
+    padding: 15px;
+    
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid  rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    animation: fadeInAndRotate 2s forwards;
+    top: 50%;
+    left: 55%;
+}
+
+@keyframes fadeInAndRotate {
+    0% {
+        opacity: 0;
+        z-index: -1;
+        transform: translateZ(px) rotateY(0deg); /* Inicialmente, traslada el iframe hacia atrás y no rota */
+    }
+    50% {
+        opacity: 1;
+        z-index: 1;
+        transform: translateZ(0) rotateY(180deg); /* A la mitad de la animación, traslada hacia adelante y rota 180 grados */
+    }
+    100% {
+        opacity: 1;
+        z-index: 1;
+        transform: translateZ(0) rotateY(360deg); /* Al final de la animación, rota 360 grados */
+    }
+}
+
+#valoracion{
+        background-color: #fff;
+        margin-left:2%;
+        margin-right: 50%;
+        margin-top: 2%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+#enlinea{
+    display: flex;
+    flex-direction: row;
+}
+
+.img_estrella{
+    padding-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.lineaForm{
+    margin-left: 2%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top:2%;
+    margin-right: 50%;
+    transition: width 1s ease;
+}
+
+.lineaForm.show{
+    width: 100%;
+    width: 100%;
+}
+

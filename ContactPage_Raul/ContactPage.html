@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Plantilla de HTML5">
+    <meta name="keywords" content="html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ContactPage.css">
+    <title>Contacto - Energías Renovables</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <script src="estrellas.js"></script>
+    <nav>
+        <a href="../FrontPage_Iyan/Front_page.html"><img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"></a> <!--Logo principal de la empresa-->
+        <ul class="list">
+          <li><a href="#">Instalaciones</a></li>
+          <li><a href="#">Energias Renovables</a></li>
+          <li><a href="#">Asesoramiento Juridico</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button class="elegant_button" type="submit" value="Save">Enviar</button>
+            </form>
+        </section>
+        <hr class="lineaForm" >
+        <section id="valoracion">
+            <form>
+            <h2>¡Valora nuestro servicio!</h2>
+            
+                <label for="idServico">Nº de Servicio:</label>
+                <input type="text" id="idServicio" name="nombre" required>
+
+                    <div id="enlinea">
+                        <label for="idServico">¡Valoranos!: </label>
+
+                        <input type="radio" id="opción" name="opcion" value="1" onclick="document.getElementById('star1').src='./src/images_videos/estrellacompleta.png'">
+                        <img id="star1" src="./src/images_videos/siluetaestrella.png" alt="siluetaestrella" class="img_estrella">
+                
+                        <input type="radio" id="opción" name="opcion" value="2" onclick="document.getElementById('star2').src='./src/images_videos/estrellacompleta.png'">
+                        <img id="star2" src="./src/images_videos/siluetaestrella.png" alt="siluetaestrella" class="img_estrella">
+
+                        <input type="radio" id="opción" name="opcion" value="3" onclick="document.getElementById('star3').src='./src/images_videos/estrellacompleta.png'">
+                        <img id="star3" src="./src/images_videos/siluetaestrella.png" alt="siluetaestrella" class="img_estrella">
+
+                        <input type="radio" id="opción" name="opcion" value="4" onclick="document.getElementById('star4').src='./src/images_videos/estrellacompleta.png'">
+                        <img id="star4" src="./src/images_videos/siluetaestrella.png" alt="siluetaestrella" class="img_estrella">
+
+                        <input type="radio" id="opción" name="opcion" value="5" onclick="document.getElementById('star5').src='./src/images_videos/estrellacompleta.png'">
+                        <img id="star5" src="./src/images_videos/siluetaestrella.png" alt="siluetaestrella" class="img_estrella">
+                    </div>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+                <button class="elegant_button" type="submit" value="Save">Enviar</button>
+            </form>
+        </section>
+
+        <section id="informacion">
+            <h2>Información de Contacto</h2>
+            <p>Teléfono: <a id ="texto_informacion" href="tel:+34987654321">987 654 321</a></p>
+            <p>Email: <a id ="texto_informacion" href="mailto:greenaliaastur@hotmail.com">greenaliaastur@hotmail.com</a></p>
+            <p>Dirección: C. Marqués, s/n, 33401 Avilés, Asturias</p>
+        </section>
+
+        <section id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.6334821153273!2d-5.9208908!3d43.551681499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd369c99e3aece7b%3A0x3a72fdc348a7a5d2!2sCentro%20Integrado%20de%20Formaci%C3%B3n%20Profesional%20Avil%C3%A9s!5e0!3m2!1ses!2ses!4v1708907999836!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-2025 Energias Valle del Norte. S.L.U</p>
+        <p>Para mayor información, contáctenos en nuestras redes sociales:</p>
+        <ul class="lista_redes_sociales">
+            <li class="red_social"><a href="https://www.facebook.com/profile.php?id=61557064551678" target="_blank"><img id="image_footer" src="./src/images_videos/facebook.png" alt="Facebook"></a></li>
+            <li class="red_social"><a href="https://www.instagram.com/energeticavalledelnorte/" target="_blank"><img id="image_footer" src="./src/images_videos/instagram.png" alt="Instagram"></a></li>
+            <li class="red_social"><a href="https://twitter.com/Valle_Del_Norte" target="_blank"><img id="image_footer" src="./src/images_videos/twitter.png" alt="Twitter"></a></li>
+            <li class="red_social"><a href="https://www.tiktok.com/@valledelnorte" target="_blank"><img id="image_footer" src="./src/images_videos/tik-tok.png" alt="TikTok"></a></li>
+        </ul>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.lineaForm',{
+            origin: 'left',
+            duration: 1000,
+            distance: '0',
+            delay: 400,
+        });
+    </script>
+</body>
+</html>

@@ -38,3 +38,44 @@ function logIn () {
 
     login.style.display = 'inline';
 }
+
+function closeLogin() {
+    var welcomeBox = document.getElementsByClassName('welcomeBox')[0];
+    welcomeBox.style.display = 'inline';
+
+    
+    var fondoHa = document.getElementsByClassName('fondoHand')[0];
+    fondoHa.style.display = 'inline';
+
+    var fondoEa = document.getElementsByClassName('fondoEarth')[0];
+    fondoEa.style.display = 'inline';
+
+    var fondoIn = document.getElementsByClassName('fondoInstalacion')[0];
+    fondoIn.style.display = 'inline';
+
+
+    //Se quita de la pantalla cada imagen de los botones
+    var globalPictures1 = document.getElementsByClassName('menuIconos')[0];
+    globalPictures1.style.display = 'inline';
+    
+    var globalPictures2 = document.getElementsByClassName('menuIconos')[1];
+    globalPictures2.style.display = 'inline';
+
+    var globalPictures3 = document.getElementsByClassName('menuIconos')[2];
+    globalPictures3.style.display = 'inline';
+
+    var goup = document.getElementById('goUp');
+    goup.style.top = '195%';
+
+    var foot = document.getElementById('foot');
+    foot.style.top = '205%';
+    //Se elimina de la pantalla el conteido de quienes somos
+    var contentBox = document.getElementById('moreInfo');
+
+    contentBox.style.display = 'inline'
+
+    //Caja login
+    var login = document.getElementById('loginBox');
+
+    login.style.display = 'none';
+}

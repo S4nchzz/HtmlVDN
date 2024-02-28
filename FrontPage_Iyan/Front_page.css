@@ -132,6 +132,16 @@ video {
     z-index: 1;
 }
 
+.welcomeBox:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.welcomeBox:not(:hover) {
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+}
+
 #welcomeh1 {
     font-size: 50px;
     font-weight: bold;
@@ -222,19 +232,30 @@ footer {
     top: 205%;    
 }
 
-#centerFooter {
-    margin-left: 38.5%;
+ul.lista_redes_sociales {
+    list-style: none;
+    display: inline; 
+    text-align: left; 
+    margin-top: 10px;
+}
+#image_footer{
+    width: 50px;
+    height: 50px;
 }
 
-.lista_redes_sociales {
-    display: inline;
-    text-align: left;
- }
- 
-.red_social {
-    width: 25px;
-    display: inline;
-    padding: 5px;
+li.red_social {
+    width: 24px; 
+    display: inline; 
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
 #goUp {
@@ -375,4 +396,8 @@ footer {
     top: 4%;
     right: 8%;
     cursor: pointer;
+}
+
+#loginButtonText {
+    color: black;
 }
