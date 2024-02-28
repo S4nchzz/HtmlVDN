@@ -10,6 +10,7 @@
 <script src="./src/scripts/RightMenu.js"></script>
 <script src="./src/scripts/StartVideo.js"></script>
 <script src="./src/scripts/PContent.js"></script>
+<script src="./src/scripts/Login.js"></script>
   <!--Este nav contiene enlaces a las demas paginas-->
   <nav>
     <img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
@@ -20,6 +21,7 @@
       <li class="menuPrincipalAni"><a href="#">Energias Renovables</a></li>
       <li class="menuPrincipalAni"><a href="#">Asesoramiento Juridico</a></li>
       <li class="menuPrincipalAni"><a href="#">Contacto</a></li>
+      <img src="./src/images_videos/usuario.png" alt="userPicture" id="login" width="70px" onclick="logIn()">
     </ul>
   </nav>
 
@@ -64,6 +66,19 @@
     <iframe class="fondoEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"></iframe>
       <a href="https://youtube.com"><img src="./src/images_videos/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"/></a>
 
+    <div id="loginBox">
+      <img src="./src/images_videos/x.png" alt="x" id="x" width="40px">
+      <h1 id="loginText">LOGIN</h1>
+      <hr style="border: 1 solid white;">
+      <span id="emailText">Email</span> <br>
+      <input type="email" placeholder="Correo electrónico" id="email">
+
+      <span id="passwordText">Password</span> <br>
+      <input type="password" placeholder="Contraseña" id="password">
+
+      <button id="loginButton"><a href="https://www.mediamadera.com">Login</a></button>
+    </div>
+
     <!--Div con el conteido de quienes somos de la empresa, con una imagen de color negra-->
     <div id="moreInfo">
       <h1 id="h1InfoP">¿Quiénes somos?</h1>
@@ -76,7 +91,7 @@
 
     <!--Footer con el conteido de la empresa asi como sus redes sociales-->
     <article id="centerFooter">
-      <footer>
+      <footer id="foot">
         <p>&copy; Energias Valle del Norte. S.L.U 2024-2025</p>
         <p>Para mayor informacion contactenos en nuestras redes sociales</p>
           <ul class="lista_redes_sociales">

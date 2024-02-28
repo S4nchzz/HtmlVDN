@@ -9,6 +9,11 @@ nav {
     z-index: 2; /* Asegura que el nav esté en un nivel superior */
 }
 
+#login {
+    margin-left: 2%;
+    cursor: pointer;
+}
+
 #sideBar {
     width: 17%;
     position: fixed;
@@ -275,4 +280,99 @@ footer {
     width: 180px;
     top: 15%;
     left: 4%;
+}
+
+#loginBox {
+    display: none;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    position: absolute;
+    top: 25%;
+    left: 37.5%;
+    width: 27%;
+    height: 75%;
+    border-radius: 6%;
+}
+
+#loginText {
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 8%;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+#email, #password {
+    position: absolute;
+    background: transparent;
+    border: 2px solid black;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 8%;
+    font-weight: bold;
+    text-align: left;
+}
+
+#email {
+    top: 15%;
+    left: 20%;
+    background-color: white;
+}
+
+#password {
+    top: 30%;
+    left: 20%;
+    background-color: white;
+}
+
+#emailText {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 16%;
+    left: 14%;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#passwordText {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 31%;
+    left: 14%;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#loginButton {
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    border: 0;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#loginButton:hover {
+    transition: 0.5s ease;
+    background-color: rgb(124, 240, 124);
+}
+
+#x {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    cursor: pointer;
 }
