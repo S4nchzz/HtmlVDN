@@ -112,12 +112,6 @@ video {
     z-index: -10000; /* Asegura que el video esté detrás del nav */
 }
 
-.menu {
-    position: fixed;
-    right: 1%;
-    top: 15%;
-}
-
 .menu:hover {
     cursor: pointer;
 }

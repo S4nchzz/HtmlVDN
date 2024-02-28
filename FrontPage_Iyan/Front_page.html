@@ -14,6 +14,7 @@
   <nav>
     <img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"> <!--Logo principal de la empresa-->
     
+    <!--Elementos enlazables a las paginas externas-->
     <ul class="list">
       <li class="menuPrincipalAni"><a href="#">Instalaciones</a></li>
       <li class="menuPrincipalAni"><a href="#">Energias Renovables</a></li>
@@ -22,13 +23,13 @@
     </ul>
   </nav>
 
-  <img src="./src/images_videos/menu.png" alt="Menu" width="40" height="40" class="menu"> <!--Boton para desplegar el menu (NO FUNCIONAL)-->
-
+  <!--Caja de bienvenida-->
   <div class="welcomeBox">
     <h1 id="welcomeh1">Valle del Norte</h1>
     <h3 id="welcomeh3">Cuidamos del medio ambiente</h3>
   </div>
 
+  <!--Menu lateral, con llamadas a metodos que abren el menu y lo cierran cuando el raton esta encima del menu, y cuando esta fuera-->
   <div id="sideBar" onmouseenter="openRightMenu()" onmouseleave="closeRightMenu()">
     <ul id="menuSideBar">
       <li class="sideBarLi"><a href="https://youtube.com">Instalaciones</a></li>
@@ -43,29 +44,37 @@
       <source src="./src/images_videos/HomeVideo.mp4" type="video/mp4">
     </video>
 
-    <!--Seccion de botones parte inferior-->
+    <!--Imagen con la mano representando la naturaleza de la empresa con una llamada al metodo cuando el mouse esta encima con un parametro para cambiar el texto cada
+      -- dependiendo del boton que se pase por encima--> 
     <iframe class="fondoHand" onmouseenter="animateDiv(1)" onmouseleave="leaveDiv()"></iframe>
       <a href="https://youtube.com"><img src="./src/images_videos/IconHand.png" alt="Mano" width="100" height="100" class="menuIconos" id="iconHand" onmouseenter="animateDiv(1)" onmouseleave="leaveDiv()"/>
 
+    <!--Imagen con la mano representando la naturaleza de la empresa con una llamada al metodo cuando el mouse esta encima con un parametro para cambiar el texto cada
+      -- dependiendo del boton que se pase por encima--> 
     <iframe class="fondoInstalacion" onmouseenter="animateDiv(2)" onmouseleave="leaveDiv()"></iframe>
       <a href="https://youtube.com"><img src="./src/images_videos/IconInstalation.png" alt="Instalacion" width="100" height="100" class="menuIconos" id="iconInstalation" onmouseenter="animateDiv(2)" onmouseleave="leaveDiv()"/>
 
+    <!--Div con el contenido del texto al que el usuario hace referencia cuando pone el cursor encima, el contenido de la etiqueta p se cambia por un codigo javascript-->
     <div class="contentFromBox">
       <p id="contentInsideBox"></p>
     </div>
 
+    <!--Imagen con la mano representando la naturaleza de la empresa con una llamada al metodo cuando el mouse esta encima con un parametro para cambiar el texto cada
+      -- dependiendo del boton que se pase por encima--> 
     <iframe class="fondoEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"></iframe>
       <a href="https://youtube.com"><img src="./src/images_videos/IconEarth.png" alt="Tierra" width="100" height="100" class="menuIconos" id="iconEarth" onmouseenter="animateDiv(3)" onmouseleave="leaveDiv()"/></a>
 
-    <div id="moreInfo"  onmouseleave="leaveDiv()">
+    <!--Div con el conteido de quienes somos de la empresa, con una imagen de color negra-->
+    <div id="moreInfo">
       <h1 id="h1InfoP">¿Quiénes somos?</h1>
       <img src="./src/images_videos/LogoEmpresaBlack.png" id="logoEmpresaBlack" width="100px">
       <p id="infoP">Valle del Norte es una empresa dedicada a promover un estilo de vida sostenible y preservar el medio ambiente. Nos especializamos en ofrecer productos ecológicos, incluyendo artículos biodegradables y cargadores para coches eléctricos. Nuestra misión es contribuir a un futuro más verde mediante soluciones innovadoras que minimicen nuestra huella ecológica. Con un fuerte compromiso con la naturaleza y la sostenibilidad, nos esforzamos por tener un impacto positivo en el planeta. Únete a nosotros en nuestro camino hacia un mundo más limpio y sostenible.</p>
     </div>
 
-    <!--Go up function-->
+    <!--Llama al metodo que hace que cuando se pulse vaya al inicio de la pagina-->
     <img src="./src/images_videos/arriba.png" id="goUp" onclick="scrollUp()"/>
 
+    <!--Footer con el conteido de la empresa asi como sus redes sociales-->
     <article id="centerFooter">
       <footer>
         <p>&copy; Energias Valle del Norte. S.L.U 2024-2025</p>
