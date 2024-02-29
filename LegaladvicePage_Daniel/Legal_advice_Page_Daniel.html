@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8">
+  <meta name="description" content="Plantilla de HTML5"/>
+  <meta name="keywords" content="html5"/>
+  <meta name="viewport" content="width=device-device,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/Legal_advice_Page_Daniel.css">
+  <script src="java.js"></script>
+  <title>Plantilla Base</title>
+ </head>
+  <body>
+    <nav>
+      <a href="../FrontPage_Iyan/Front_page.html"><img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"></a>
+      <ul class="list">
+        <li class="menuPrincipalAni"><a href="../InstalationPage_Pelayo/instalaciones.html">Instalaciones</a></li>
+        <li class="menuPrincipalAni"><a href="../RenewableEnergy_Guillermo/RenewableEnergyPage.html">Energias Renovables</a></li>
+        <li class="menuPrincipalAni"><a href="#">Asesoramiento Juridico</a></li>
+        <li class="menuPrincipalAni"><a href="../ContactPage_Raul/ContactPage.html">Contacto</a></li>
+      </ul>
+    </nav>     
+    <header>
+      
+    </header>
+    <main>
+      <h1 class="titu">Asesoramiento fiscal y legal para el sector de energias renovables</h1>
+     <section>
+      
+      <p class="parrafo1">
+        Nuestro equipo de abogados y fiscalistas está compuesto por profesionales altamente 
+        especializados en el ámbito del derecho de la energía renovable y las infraestructuras
+         asociadas. Tanto a nivel nacional como internacional, nos destacamos por ofrecer 
+         asesoramiento jurídico de vanguardia. Contamos con un profundo conocimiento de los 
+         diversos subsectores energéticos, lo que nos permite abordar los desafíos y seguir 
+         de cerca las tendencias emergentes que afectan a las empresas del sector de la Energía.</p>
+      <p class="parrafo1">Ofrecemos un asesoramiento integral en este campo, abarcando todos los
+         aspectos legales que pueden surgir en cualquier fase del procedimiento y en relación con
+          la legislación aplicable. Nos esforzamos por proporcionar soluciones jurídicas innovadoras
+           que anticipen y aborden de manera efectiva los retos legales que puedan surgir en el cambiante
+            panorama de la energía renovable.</p>
+      <p class="parrafo1">En nuestro bufete de abogados, nos enorgullece estar disponibles para atender a diversos
+         tipos de clientes. Ya sea que se trate de empresas y organizaciones del sector
+          público o privado, particulares con proyectos energéticos o proveedores de energías
+           renovables, nos comprometemos a adaptar nuestra experiencia jurídica para satisfacer
+            las necesidades específicas de cada cliente.</p>
+      <p class="parrafo1">Además, nuestro equipo está comprometido con mantenerse actualizado sobre las últimas
+         tendencias legislativas y normativas en el campo de la energía renovable. Esta dedicación
+          nos permite proporcionar asesoramiento proactivo y estratégico que no solo cumple con los
+           requisitos legales actuales, sino que también anticipa y se adapta a los cambios futuros.</p>
+      <p class="parrafo1">En resumen, nuestro bufete de abogados se distingue por ofrecer un servicio
+            jurídico completo y especializado en el ámbito de la energía renovable. Estamos comprometidos
+             con la excelencia y la adaptabilidad, trabajando mano a mano con nuestros clientes para
+              asegurar soluciones jurídicas efectivas que impulsen el éxito en un entorno energético 
+              dinámico y en constante evolución.</p>
+      <img class="imgtext" src="./src/images_videos/imgtext.jpg" alt="imgtext" width="700px">
+     </section>
+     <section>
+      <article><h1 class="titu2">En qué podemos ayudarte</h1></article>
+       <section class="desplegables">
+           <button class="accordion"><img class="img_acor" width="50px" alt="AS" src="./src/images_videos/ALR.png">
+               <p class="tituacord">Ámbito legal y regulatorio</p>
+           </button>
+           <article class="panel">
+             <ul class="info_des2">
+               <li class="info_des">Estudio, análisis y preparación de propuestas regulatorias</li>
+               <li class="info_des">Aspectos regulatorios y de contratación (i.e. PPAs)</li>
+               <li class="info_des">Financiación de proyectos</li>
+               <li class="info_des">Asesoramiento mercantil y societario</li>
+               <li class="info_des">Diseño de la estrategia y función jurídica</li>
+               <li class="info_des">Llevanza de litigios, mediación y arbitraje</li>
+               <li class="info_des">M&A legal y regulatorio</li>
+               <li class="info_des">Due Diligence</li>
+             </ul>
+             <img class="img1" src="./src/images_videos/desp1.png" alt="desp1">
+           </article>
+           <button class="accordion"><img class="img_acor" width="50px" alt="AF" src="./src/images_videos/AF.png">
+             <p class="tituacord">Asesoría Fiscal</p>
+           </button>
+           <article class="panel">
+             <ul class="info_des2">
+               <li class="info_des">Negociación y contratación de los seguros necesarios para los proyectos de energías renovables.</li>
+               <li class="info_des">Comunicación con la Comisión Nacional de los Mercados y la Competencia (CNMC).</li>
+               <li class="info_des">Cambio de titularidad de permisos, licencias y autorizaciones administrativas.</li>
+               <li class="info_des">Revisión, negociación, redacción, análisis y ejecución de contratos EPC, Operación y Mantenimiento (O&M), PPA y Agentes de Mercado.</li>
+               <li class="info_des">Asesoramiento en contratos de suministro de bienes de equipo.</li>
+               <li class="info_des">Asesoramiento en contratos de suministros de biomasa para producción eléctrica.</li>
+               <li class="info_des">Asesoramiento en contratos de suministro de electricidad e hidrocarburos.</li>
+             </ul>
+             <img class="img1" src="./src/images_videos/desp2.jpg" alt="desp2">
+           </article>
+           <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+              for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+           </script>
+         </section>
+       </section>
+       <section class="team">Nuestro Equipo</section>
+      
+      <section class="sec_card">
+       <article class="card">
+        <img class="imgabo" src="./src/images_videos/abo1.jpg" alt="John">
+        <h1>John John</h1>
+        <p class="title">Abogado</p>
+        <p>Universidad Pontificia Comillas</p>
+        <p><button class="cardb">+34 683 01 73 12</button></p>
+      </article>
+      <article class="card">
+        <img class="imgabo" src="./src/images_videos/abo2.jpg" alt="Carlos">
+        <h1>Carlos Alberto</h1>
+        <p class="title">Abogado</p>
+        <p>Universidad Carlos III de Madrid</p>
+        <p><button class="cardb">+34 611 23 86 73</button></p>
+      </article>
+      <article class="card">
+        <img class="imgabo" src="./src/images_videos/abo3.jpg" alt="Marcos">
+        <h1>Marcos Calvo</h1>
+        <p class="title">Abogado</p>
+        <p>Universidad Pompeu Fabra</p>
+        <p><button class="cardb">+34 654 76 95 79</button></p>
+      </article>
+    </div>
+    </section>
+    </main>
+    <footer>
+     <p>Copyright Energias Valle del Norte. S.L.U 2024-2025</p>
+     <p>Para mayor informacion contactenos en nuestras redes sociales</p>
+     <ul class="lista_redes_sociales">
+      <li class="red_social"><a href="https://www.facebook.com/profile.php?id=61557064551678" target="_blank"><img id="image_footer" src="./src/images_videos/facebook.png" alt="Facebook"></a></li>
+      <li class="red_social"><a href="https://www.instagram.com/energeticavalledelnorte/" target="_blank"><img id="image_footer" src="./src/images_videos/instagram.png" alt="Instagram"></a></li>
+      <li class="red_social"><a href="https://twitter.com/Valle_Del_Norte" target="_blank"><img id="image_footer" src="./src/images_videos/twitter.png" alt="Twitter"></a></li>
+      <li class="red_social"><a href="https://www.tiktok.com/@valledelnorte" target="_blank"><img id="image_footer" src="./src/images_videos/tik-tok.png" alt="TikTok"></a></li>
+     </ul>
+     </footer>
+  </body>
+</html>
