@@ -12,76 +12,76 @@
 <script src="./src/scripts/Selection.js"></script>
 <script src="./src/scripts/stockAgotado.js"></script>
 
-    <title>Comprar Paneles Solares EVN</title>
-    </head>
+<title>Comprar Paneles Solares EVN</title>
+</head>
 
-        <body>
-            <nav>
-                <a href="../FrontPage_Iyan/Front_page.html"><img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"></a> <!--Logo principal de la empresa-->
+<body>
+    <nav>
+        <a href="../FrontPage_Iyan/Front_page.html"><img src="./src/images_videos/LogoEmpresa.png" alt="Logo de la empresa" class="logo"></a> <!--Logo principal de la empresa-->
+    
+        <ul class="list">
+            <li><a href="#">Instalaciones</a></li>
+            <li><a href="../RenewableEnergy_Guillermo/RenewableEnergyPage.html">Energias Renovables</a></li>
+            <li><a href="#">Asesoramiento Juridico</a></li>
+            <li><a href="../ContactPage_Raul/ContactPage.html">Contacto</a></li>
+        </ul>
+        </nav>
+
+        <header>
+            <h1 class="titulo_presentacion">COMPRAR EVN SOLAR</h1>
+        </header>
+        <main>
             
-                <ul class="list">
-                  <li><a href="instalaciones.html">Instalaciones</a></li>
-                  <li><a href="EnergiasRenovables.html">Energias Renovables</a></li>
-                  <li><a href="#">Asesoramiento Juridico</a></li>
-                  <li><a href="../ContactPage_Raul/ContactPage.html">Contacto</a></li>
-                </ul>
-              </nav>
+            <section>
+                <article>
+                    <img class="img_presentation" src="./src/images_videos/paneles_solares/Panel_A.jpg" alt="imagen_presentacion" id="myImage">
+                </article>
+                <article class="option selected" onclick="toggleSelection(this)">
+                    <h2>Paneles Solares</h2>
+                        <p class="circulo_seleccion"></p>
+                        <p>Desde: 2499,00€</p>
+                </article>
+                <article class="option" style="margin-left: 27%;" onclick="redirectPage()">
+                    <h2>Cargadores de Vehiculo</h2>
+                        <p class="circulo_seleccion"></p>
+                        <p>Desde: 559,00€</p>
+                </article>
+            </section>
 
-                <header>
-                    <h1 class="titulo_presentacion">COMPRAR EVN SOLAR</h1>
-                </header>
-                <main>
-                    
-                    <section>
-                        <article>
-                            <img class="img_presentation" src="./src/images_videos/paneles_solares/Panel_A.jpg" alt="imagen_presentacion" id="myImage">
-                        </article>
-                        <article class="option selected" onclick="toggleSelection(this)">
-                            <h2>Paneles Solares</h2>
-                                <p class="circulo_seleccion"></p>
-                                <p>Desde: 2499,00€</p>
-                        </article>
-                        <article class="option" style="margin-left: 27%;" onclick="redirectPage()">
-                            <h2>Cargadores de Vehiculo</h2>
-                                <p class="circulo_seleccion"></p>
-                                <p>Desde: 559,00€</p>
-                        </article>
-                    </section>
+            <section>
+                <article class="choose_model">
+                    <h1>Escoge tu modelo</h1>
+                </article>
+                <article class="option_model" style="margin-left: 8%; "onclick="document.getElementById('myImage').src='./src/images_videos/paneles_solares/Panel_D.jpg '">
+                    <h2> EVN Solar Sky</h2>
+                    <p class="circulo_seleccion"></p>
+                    <p>Desde 2499,00€ o 95,80€/mes</p>
+                </article>
 
-                    <section>
-                        <article class="choose_model">
-                            <h1>Escoge tu modelo</h1>
-                        </article>
-                        <article class="option_model" style="margin-left: 8%; "onclick="document.getElementById('myImage').src='./src/images_videos/paneles_solares/Panel_D.jpg '">
-                            <h2> EVN Solar Sky</h2>
-                            <p class="circulo_seleccion"></p>
-                            <p>Desde 2499,00€ o 95,80€/mes</p>
-                        </article>
-
-                        <article class="option_model" style="margin-left: 27.2%; "onclick="document.getElementById('myImage').src='./src/images_videos/paneles_solares/Panel_A.jpg'">
-                            <h2>EVN Solar Pro</h2>
-                            <p class="circulo_seleccion"></p>
-                            <p>Desde 3559,90€ o 196,90 €/mes </p>
-                        </article>
-                        <article>
-                            <h1 class="choose_model" style="margin-top: 300px;">Te lo llevamos a casa</h1>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1169.8763193954248!2d-5.921848387399732!3d43.551545291797105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1709058108230!5m2!1ses!2ses"
-                             width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                             <button class="elegant_button" onclick="redirectContact()">Instalaciones Personalizadas</button>
-                             <button class="elegant_button" style="margin-top: 3%; margin-left: 59%; " onclick="stockAgotado()">Compra Directa</button>
-                        </article>
-                    </section>
-                    
-                </main>
-                <footer>
-                    <p>&copy; 2024-2025 Energias Valle del Norte. S.L.U</p>
-                    <p>Para mayor información, contáctenos en nuestras redes sociales:</p>
-                    <ul class="lista_redes_sociales">
-                        <li class="red_social"><a href="https://www.facebook.com/profile.php?id=61557064551678" target="_blank"><img id="image_footer" src="./src/images_videos/facebook.png" alt="Facebook"></a></li>
-                        <li class="red_social"><a href="https://www.instagram.com/energeticavalledelnorte/" target="_blank"><img id="image_footer" src="./src/images_videos/instagram.png" alt="Instagram"></a></li>
-                        <li class="red_social"><a href="https://twitter.com/Valle_Del_Norte" target="_blank"><img id="image_footer" src="./src/images_videos/twitter.png" alt="Twitter"></a></li>
-                        <li class="red_social"><a href="https://www.tiktok.com/@valledelnorte" target="_blank"><img id="image_footer" src="./src/images_videos/tik-tok.png" alt="TikTok"></a></li>
-                    </ul>
-                </footer>
-        </body>
-        </html>
+                <article class="option_model" style="margin-left: 27.2%; "onclick="document.getElementById('myImage').src='./src/images_videos/paneles_solares/Panel_A.jpg'">
+                    <h2>EVN Solar Pro</h2>
+                    <p class="circulo_seleccion"></p>
+                    <p>Desde 3559,90€ o 196,90 €/mes </p>
+                </article>
+                <article>
+                    <h1 class="choose_model" style="margin-top: 300px;">Te lo llevamos a casa</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1169.8763193954248!2d-5.921848387399732!3d43.551545291797105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1709058108230!5m2!1ses!2ses"
+                        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                        <button class="elegant_button" onclick="redirectContact()">Instalaciones Personalizadas</button>
+                        <button class="elegant_button" style="margin-top: 3%; margin-left: 59%; " onclick="stockAgotado()">Compra Directa</button>
+                </article>
+            </section>
+            
+        </main>
+        <footer>
+            <p>&copy; 2024-2025 Energias Valle del Norte. S.L.U</p>
+            <p>Para mayor información, contáctenos en nuestras redes sociales:</p>
+            <ul class="lista_redes_sociales">
+                <li class="red_social"><a href="https://www.facebook.com/profile.php?id=61557064551678" target="_blank"><img id="image_footer" src="./src/images_videos/facebook.png" alt="Facebook"></a></li>
+                <li class="red_social"><a href="https://www.instagram.com/energeticavalledelnorte/" target="_blank"><img id="image_footer" src="./src/images_videos/instagram.png" alt="Instagram"></a></li>
+                <li class="red_social"><a href="https://twitter.com/Valle_Del_Norte" target="_blank"><img id="image_footer" src="./src/images_videos/twitter.png" alt="Twitter"></a></li>
+                <li class="red_social"><a href="https://www.tiktok.com/@valledelnorte" target="_blank"><img id="image_footer" src="./src/images_videos/tik-tok.png" alt="TikTok"></a></li>
+            </ul>
+        </footer>
+</body>
+</html>

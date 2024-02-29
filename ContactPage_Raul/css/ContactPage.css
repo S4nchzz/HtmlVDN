@@ -91,7 +91,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(./src/images_videos/foto_fondo_paisaje.jpg);
+    background-image: url(../src/images_videos/foto_fondo_paisaje.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
