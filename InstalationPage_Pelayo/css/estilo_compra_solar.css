@@ -1,0 +1,261 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+header {
+    margin-top: 10%;
+}
+
+.list {
+    position: relative;
+    left: 46%; /* Poiscion del contenido del nav a la derecha de la pagina */
+    list-style: none;
+    padding: 1%;
+    top: 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list li {
+    position: relative;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo {
+    position: absolute;
+    top: 10;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding-right: 20%;
+}
+nav {
+    background: linear-gradient(to bottom, black, transparent);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1.4%;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+#asideMenu {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    position: absolute;
+    top: 10;
+    left: 3%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding-right: 20%;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+a {
+    font-family:'Segoe UI', Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    position: relative;
+    top: 13px;
+    left: 2%;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.lista_redes_sociales {
+   display: inline;
+   text-align: left;
+     
+
+}
+
+.red_social {
+    width: 25px;
+    display: inline;
+    padding: 5px;
+
+}
+
+.option {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    padding-bottom: 60px;
+    position: absolute; 
+    left: 45%;
+    top: 26.5%;
+    cursor: pointer;
+    padding-left: 10px;
+    float: left;
+    display: inline;
+  }
+
+  .option:hover {
+    color: white;
+    background: linear-gradient(to left, #8a2be2, #ff69b4);
+    transition: 0.7s
+  }
+
+  
+  .circulo_seleccion {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  
+  .option.selected .circulo_seleccion {
+    background-color: #0b5596;
+    border-color: black;
+  }
+
+  .img_presentation {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  @keyframes entrada {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(80000deg);
+    }
+  }
+
+  .choose_model {
+    position: absolute;
+    top: 36.5%;
+    left: 45%;
+    font-size: 30px;
+    color: black;
+    border-bottom: solid 2px black;
+    
+  }
+
+  .titulo_presentacion {
+    margin-left: 20px;
+    font-size: 36px;
+    border-bottom: 2px solid black;
+    margin-right: 59%;
+    padding-bottom: 5px;
+  }
+
+  .option_model {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    padding-bottom: 60px;
+    position: absolute; 
+    left: 45%;
+    top: 50.5%;
+    cursor: pointer;
+    padding-left: 10px;
+    float: left;
+    display: inline;
+    padding-bottom: 3.2%;
+  }
+
+  .option_model:hover {
+    color: white;
+    background: linear-gradient(to right, #8a2be2, #ff69b4);
+    transition: 0.7s
+  }
+
+  .mapa {
+    border: 6px solid black;
+    margin-left: 44%;
+    position: absolute;
+    top: 69%;
+    border-radius: 6px;
+  }
+
+  .elegant_button {
+    margin-right: 15px;
+    padding: 35px;
+    background: transparent;
+    border: solid black 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    float: right;
+}
+
+.elegant_button:hover {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, #2782be, #9cc3eb);
+  border-radius: 6px;
+  transition: 0.7s
+}
+
+#image_footer{
+  width: 50px;
+  height: 50px;
+}
+ul.lista_redes_sociales {
+  list-style: none;
+  display: inline; 
+  margin-top: 10px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 18%;
+}
+
+.red_social {
+  width: 25px;
+  display: inline;
+  padding: 5px;
+}
